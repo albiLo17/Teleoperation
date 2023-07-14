@@ -18,7 +18,7 @@ Teleoperate the Franka through Oculus Quest.
 
 Here are some useful links related to the project:
 
-- [VR Init]([https://your-project-documentation-url.com](https://github.com/rail-berkeley/oculus_reader): Github repo used to initialize the VR interface.
+- [VR Init](https://github.com/rail-berkeley/oculus_reader): Github repo used to initialize the VR interface.
 
 
 

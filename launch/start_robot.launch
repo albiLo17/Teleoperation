@@ -1,0 +1,17 @@
+<launch>
+    <arg name="franka_ip" default="172.16.0.12"/>
+
+    <rosparam param="franka">$(arg franka_ip)"</rosparam>
+
+
+    <!-- Launch robots -->
+    <include file="$(find franka_control)/launch/franka_control.launch" >
+        <arg name="robot_ip" value="$(arg franka_ip)"/>
+        <arg name="load_gripper" value="true"/>
+    </include>
+
+    <!-- Launch controller node -->
+    <include file="$(find franka_example_controllers)/launch/kth_joint_cartesian_effort_interface_controller.launch" />
+
+
+</launch>

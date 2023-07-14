@@ -14,6 +14,12 @@ Teleoperate the Franka through Oculus Quest.
    ```shell
    rosrun teleoperation oculus_data_collection.py
 
+
+## To be careful
+
+1. The transformation between VR and robot frame is hardcoded.
+2. Rotations are not considered in the current script (sending zero angular velocity)
+
 ## Useful Links
 
 Here are some useful links related to the project:
